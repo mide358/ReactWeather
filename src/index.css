@@ -1,7 +1,5 @@
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+* {
+  box-sizing: border-box;
 }
 
 html,
@@ -24,7 +22,6 @@ body {
 
 .left {
   margin: 0;
-  /* padding-left: 20px; */
   padding-top: 32%;
   height: 100vh;
 }
@@ -49,11 +46,10 @@ body {
 
 #location {
   margin-top: 1rem;
-  font-size: 1.8rem;
-  margin-left: 15px;
+  font-size: 1.3rem;
 }
 #time {
-  font-size: 0.7rem;
+  font-size: 1rem;
 }
 
 .day h3 {
@@ -66,14 +62,17 @@ body {
 }
 
 #w-details {
-  margin-top: 13rem;
+  margin-top: 11rem;
   color: white;
   width: 18rem !important;
+  height: 16rem;
   line-height: 3rem !important;
   list-style: none;
   border: 1px solid white;
   background-color: rgba(22, 22, 26, 0.3);
   border-radius: 4px;
+  font-size: 1.2rem;
+  padding-top: 1rem;
 }
 #loc-btn {
   margin-top: 20px;
@@ -91,20 +90,24 @@ body {
 }
 
 /* styling for small screens */
-@media (max-width: 450px) {
+@media (max-width: 576px) {
   .left {
     height: 55vh;
     padding-top: 0;
+    margin-bottom: 2rem;
   }
   .right {
-    margin-top: -10px;
-    height: 40vh;
+    /* margin-top: -10px; */
+    height: 70vh;
   }
 
   .weather {
     display: block !important;
-    height: 13rem;
+    height: 11rem;
     width: 13rem;
+  }
+  #weather-img {
+    height: 2rem;
   }
   #temperature {
     font-size: 1.2rem;
@@ -112,7 +115,7 @@ body {
   }
 
   #location {
-    font-size: 0.8rem;
+    font-size: 0.8rem !important;
     text-align: center;
   }
 
@@ -147,7 +150,7 @@ body {
 
   #w-details {
     margin-top: -2rem;
-    width: 13rem;
+    width: 15rem !important;
     line-height: 2.5rem;
     background-color: rgba(79, 80, 82, 0.4);
   }
@@ -155,13 +158,12 @@ body {
     font-size: 0.8rem !important;
   }
   #loc-btn {
-    margin-bottom: 10px;
     font-size: 1rem;
     padding: 5px;
   }
 }
 /* styling for medium screens */
-@media (min-width: 426px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .left {
     height: 45vh;
     padding-top: 0;
@@ -217,7 +219,7 @@ body {
     text-align: center;
   }
   #date {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 600;
   }
   #location {

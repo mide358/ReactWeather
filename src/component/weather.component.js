@@ -37,7 +37,7 @@ function Weather() {
   return (
     <div className="row mx-auto">
       {weatherdata !== null ? (
-        <div className="col-md-7 left">
+        <div className="col-md-6 left">
           <div className="day">
             <h3 id="date">
               Date: {weatherdata.location.localtime.slice(0, 10)}
@@ -78,7 +78,7 @@ function Weather() {
       ) : null}
 
       {weatherdata !== null ? (
-        <div className="col-md-5 right mx-auto pt-5">
+        <div className="col-md-6 right mx-auto pt-5">
           <div id="">
             <h2 id="location-right">
               Location: &nbsp;
